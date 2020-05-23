@@ -26,7 +26,8 @@ header {
     background-color: rgb(248, 230, 212);
     position: relative;
     padding-top: 200px;
-    padding-bottom:420px;
+    padding-bottom:380px;
+    margin: 0 50px 0 50px;
     text-align: center;
     background-image: url("images/blue-background.jpg");
     background-attachment: fixed;
@@ -53,8 +54,9 @@ footer, .main {
     background-color: #fcfcfc;
 }
 
-.social-icon-footer {
+.social-icon {
     color: #42413f;
+    font-size: 50px;
     padding: 20px 20px 20px 20px;
 }
 
@@ -89,6 +91,10 @@ article p {
     text-overflow: ellipsis;
 }
 
+button {
+    cursor: pointer;
+}
+
 .resize-animation-stopper * {
     animation: none !important;
     transition: none !important;
@@ -106,7 +112,7 @@ article p {
     padding: 50px 0 0px 0;
 }
 
-.latest-posts {
+.languages {
     padding: 20px 0 0 0;
 }
 
@@ -115,20 +121,23 @@ article p {
     color: #000;
 }
 
-/* .btn {
-	background:linear-gradient(to bottom, #464442 5%, #706e68 100%);
-	background-color:#42413f;
-    border-radius:5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.button {
+	background:whitesmoke;
+	background-color:#fff;
+    border-radius:20px;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#4352a7;
 	font-family:'Montserrat', sans-serif;
-	font-size:15px;
+    font-size:20px;
     padding:10px 25px;
     margin:10px;
 	text-decoration:none;
-} */
+}
+
+.button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 @supports (display: flex) {
     @media screen and (min-width: 900px) {
@@ -146,7 +155,7 @@ article p {
     align-items: center;
     min-height: 8vh;
     width: 100%;
-    background-color: #58294a;
+    background-color: #122d85;
     z-index: 9;
     position: fixed;
     opacity: 80%;
@@ -192,11 +201,6 @@ ul {
     font-size: 14px;
 }
 
-.social-icon {
-    padding: 20px 10px;
-    color: white;
-  }
-
 .nav-links a:hover, .social-icon:hover {
     color: rgb(130, 169, 219);
 }
@@ -223,7 +227,7 @@ ul {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #58294a;
+        background-color: #122d85;
         display: flex;
         flex-direction: column;
         align-items: center;
