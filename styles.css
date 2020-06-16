@@ -11,14 +11,14 @@ body {
 }
 
 h1 {
-    font-family: "Dancing Script";
-    color: rgb(216, 213, 219);
-    font-size: 100px;
+    font-family: "Montserrat";
+    color: #fff;
+    font-size: 80px;
     font-weight: 400;
 }
 
 h2 {
-    color: #353234;
+    color: #b7dbec;
 }
 
 
@@ -27,12 +27,13 @@ header {
     position: relative;
     padding-top: 200px;
     padding-bottom:380px;
-    margin: 0 50px 0 50px;
+    margin: 0;
     text-align: center;
-    background-image: url("images/blue-background.jpg");
+    background-image: url("images/arctic-landscape.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }
 
 a {
@@ -41,7 +42,7 @@ a {
 
 hr {
     width:10%;
-    border: dotted rgb(161, 140, 140)  6px;
+    border: dotted rgb(212, 232, 255)  6px;
     border-bottom: none;
     margin: auto;
   }
@@ -51,11 +52,11 @@ footer {
 }
 
 footer, .main {
-    background-color: #fcfcfc;
+    background-color: #344953;
 }
 
 .social-icon {
-    color: #42413f;
+    color: #1aa4bd;
     font-size: 50px;
     padding: 20px 20px 20px 20px;
 }
@@ -155,7 +156,7 @@ button {
     align-items: center;
     min-height: 8vh;
     width: 100%;
-    background-color: #122d85;
+    background-color: black;
     z-index: 9;
     position: fixed;
     opacity: 80%;
