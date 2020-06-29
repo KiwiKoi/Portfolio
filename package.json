@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiwiKoi/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KiwiKoi/Portfolio/issues"
+  },
+  "homepage": "https://github.com/KiwiKoi/Portfolio#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.4.2",
+    "bootstrap": "^4.5.0",
+    "popper.js": "^1.16.1"
+  }
+}
