@@ -18,7 +18,6 @@
   "homepage": "https://github.com/KiwiKoi/Portfolio#readme",
   "dependencies": {
     "@popperjs/core": "^2.4.2",
-    "bootstrap": "^4.5.0",
-    "popper.js": "^1.16.1"
+    "bootstrap": "^4.5.0"
   }
 }
