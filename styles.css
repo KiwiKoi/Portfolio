@@ -85,14 +85,23 @@ div.section-title {
 }
 
 .card {
+  display: flex;
   background-color: transparent;
   box-sizing: border-box;
+  align-content: center;
   border-width: 1px;
   border-radius: 5px;
   margin: 2px;
-  height: 35vh;
-  max-width: 35vw;
+  min-height: 0vh;
+  min-width: 30vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+  align-self: center;
+  max-width: 50%;
+  max-height: 50%;
+  display: block;
 }
 
 .fab,
@@ -120,7 +129,7 @@ div.section-title {
 }
 
 .wrapper {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   align-items: center;
@@ -132,7 +141,7 @@ div.section-title {
 }
 
 .skills,
-.projects,
+.portfolio,
 .contact {
   padding: 20px 0 40px 0;
   align-items: center;
