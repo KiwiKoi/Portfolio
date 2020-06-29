@@ -51,7 +51,7 @@ button {
 
 hr {
   width: 10%;
-  border: dotted #939596 6px;
+  border: solid #939596 2px;
   border-bottom: none;
   margin: auto;
 }
@@ -127,8 +127,11 @@ div.section-title {
   padding: 50px 0 0px 0;
 }
 
-.skills {
-  padding: 20px 0 0 0;
+.skills,
+.projects,
+.contact {
+  padding: 20px 0 40px 0;
+  align-items: center;
 }
 
 .active {
@@ -152,4 +155,9 @@ div.section-title {
 
 .button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand {
+  align-items: center;
+  display: flex;
 }
