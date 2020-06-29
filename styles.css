@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 hr {
   width: 10%;
   border: dotted #939596 6px;
@@ -62,6 +66,17 @@ footer,
   padding: 20px 20px 20px 20px;
 }
 
+.card {
+  background-color: transparent;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 2px;
+  height: 35vh;
+  max-width: 35vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 article {
   display: flex;
   flex-wrap: wrap;
@@ -75,7 +90,18 @@ article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-article div {
+.fab,
+.fas {
+  font-size: 4rem;
+  color: rgb(231, 231, 231);
+}
+
+.logo {
+  font-size: 2rem;
+  color: rgb(231, 231, 231);
+}
+
+.card div {
   box-sizing: 100%;
   display: inline-block;
   margin: auto;
@@ -86,20 +112,11 @@ div.section-title {
   font-size: 20px;
 }
 
-article p {
+.card p {
   width: 200px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-button {
-  cursor: pointer;
-}
-
-.resize-animation-stopper * {
-  animation: none !important;
-  transition: none !important;
 }
 
 .wrapper {
@@ -114,7 +131,7 @@ button {
   padding: 50px 0 0px 0;
 }
 
-.tools {
+.skills {
   padding: 20px 0 0 0;
 }
 
@@ -139,12 +156,4 @@ button {
 
 .button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@supports (display: flex) {
-  @media screen and (min-width: 900px) {
-    article {
-      display: flex;
-    }
-  }
 }
