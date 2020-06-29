@@ -10,6 +10,11 @@ body {
   min-height: 100%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: "Roboto Mono", sans-serif;
   color: #f1f1f1;
@@ -26,7 +31,7 @@ header {
   background-color: rgb(230, 228, 227);
   position: relative;
   padding-top: 200px;
-  padding-bottom: 380px;
+  padding-bottom: 250px;
   margin: 0;
   text-align: center;
   background-image: url("images/arctic-landscape.jpg");
@@ -40,13 +45,17 @@ a {
   text-decoration: none;
 }
 
+i {
+  padding: 0 8px 0 0;
+}
+
 button {
   cursor: pointer;
 }
 
 hr {
   width: 10%;
-  border: dotted #939596 6px;
+  border: solid #939596 2px;
   border-bottom: none;
   margin: auto;
 }
@@ -58,6 +67,15 @@ footer {
 footer,
 .main {
   background-color: #423f50;
+}
+
+h3.subtitle {
+  color: #e7e7e7;
+}
+
+div.section-title {
+  font-family: "Roboto Mono", sans serif;
+  font-size: 20px;
 }
 
 .social-icon {
@@ -77,39 +95,21 @@ footer,
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-article {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  box-sizing: border-box;
-  border-width: 1px;
-  border-radius: 5px;
-  margin: 2px;
-  height: 35vh;
-  max-width: 35vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .fab,
 .fas {
-  font-size: 4rem;
-  color: rgb(231, 231, 231);
+  font-size: 3rem;
+  color: #e7e7e7;
 }
 
 .logo {
   font-size: 2rem;
-  color: rgb(231, 231, 231);
+  color: #e7e7e7;
 }
 
 .card div {
   box-sizing: 100%;
   display: inline-block;
   margin: auto;
-}
-
-div.section-title {
-  font-family: "Roboto Mono", sans serif;
-  font-size: 20px;
 }
 
 .card p {
@@ -131,8 +131,11 @@ div.section-title {
   padding: 50px 0 0px 0;
 }
 
-.skills {
-  padding: 20px 0 0 0;
+.skills,
+.projects,
+.contact {
+  padding: 20px 0 40px 0;
+  align-items: center;
 }
 
 .active {
@@ -156,4 +159,9 @@ div.section-title {
 
 .button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand {
+  align-items: center;
+  display: flex;
 }
