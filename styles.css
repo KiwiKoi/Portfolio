@@ -27,6 +27,11 @@ h2 {
   color: #b7dbec;
 }
 
+h3 {
+  font-size: 20px;
+  color: #71b4f3;
+}
+
 header {
   background-color: rgb(230, 228, 227);
   position: relative;
@@ -66,7 +71,7 @@ footer {
 
 footer,
 .main {
-  background-color: #423f50;
+  background-color: #2b304b;
 }
 
 h3.subtitle {
@@ -76,6 +81,7 @@ h3.subtitle {
 div.section-title {
   font-family: "Roboto Mono", sans serif;
   font-size: 20px;
+  padding: 0 0 20px 0;
 }
 
 .social-icon {
