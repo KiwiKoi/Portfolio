@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  color: #e7e7e7;
+}
+
 h1 {
   font-family: "Roboto Mono", sans-serif;
   color: #f1f1f1;
@@ -128,10 +132,8 @@ img {
 }
 
 .card p {
-  width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 .wrapper {
