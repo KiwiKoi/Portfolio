@@ -19,27 +19,27 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="#skills">Skillset</a>
-            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
+          <div class="navbar-nav mr-auto animate slide-in">
+            <a id="skillsNav" class="nav-item nav-link" href="#skills">Skillset</a>
+            <a id="portfolioNav" class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a id="contactNav" class="nav-item nav-link" href="#contact">Contact</a>
           </div>
-          <div class="dropdown">
+          <div class="lang-select dropdown">
             <button class="btn btn-secondary dropdown-toggle btn-sm" style="background-color: black;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Site Language
               <span class="caret"></span>
             </button>
                 <ul class="dropdown-menu nav-item" style="background-color: black;" aria-labelledby="dropdownMenuButton">
-                    <li><button class="dropdown-item" style=" color:#BFBFBF" href="#">English</button></li>
-                    <li><button class="dropdown-item" style=" color:#BFBFBF" href="#">Français</button></li>
+                    <li><a class="dropdown-item refresh-button" style=" color:#BFBFBF" href="#eng" language="english" class="active" >English</a></li>
+                    <li><a class="dropdown-item refresh-button" style=" color:#BFBFBF" href="#fr" language="french">Français</a></li>
                 </ul>
           </div>
         </div>
       </nav>
 
     <header>
-        <h1 class="heading">Hi, I'm Daniel</h1>
-        <h3 class="subtitle">Front-end developer</h3>
+        <h1 id="heading">Hi, I'm Daniel</h1>
+        <h3 id="subtitle">Front-end developer</h3>
         <a class="button" href="#portfolio">See My Projects</a>
     </header>
 
@@ -51,17 +51,17 @@
             </div>
                     <div class="container-fluid">
                         <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div><i class="fab fa-html5"></i>
+                            <div class="skill card col-lg-4 col-md-6 col-sm-6">
+                                <div ><i class="fab fa-html5"></i>
                                     <h3>HTML</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="skill card col-lg-4 col-md-6 col-sm-6">
                                 <div><i class="fab fa-css3 icon-4x"></i>
                                     <h3>CSS</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="skill card col-lg-4 col-md-12 col-sm-12">
                                 <div>
                                     <i class="fab fa-js"></i>
                                     <h3>Javascript</h3>
@@ -69,19 +69,19 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="skill card col-lg-4 col-md-6 col-sm-6">
                                 <div>
                                     <i class="fab fa-react"></i>
                                     <h3>React.js</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="skill card col-lg-4 col-md-6 col-sm-6">
                                 <div>
                                     <i class="fab fa-node-js"></i>
                                     <h3>Node.js</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="skill card col-lg-4 col-md-12 col-sm-12">
                                 <div>
                                     <i class="fab fa-bootstrap"></i>
                                     <h3>Bootstrap</h3>
@@ -89,22 +89,22 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="skill card col-lg-4 col-md-6 col-sm-6">
                                 <div>
                                     <i class="fab fa-git-alt"></i>
                                     <h3>Git</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="skill card col-lg-4 col-md-6 col-sm-6">
                                 <div>
                                     <i class="fas fa-code"></i>
                                     <h3>VCS</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="skill card col-lg-4 col-md-12 col-sm-12">
                                 <div>
                                     <i class="fas fa-terminal"></i>
-                                    <h3>Cmder</h3>
+                                    <h3>Command line</h3>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="card"  >
+                        <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title" >Portfolio Site</h2>
@@ -128,7 +128,7 @@
                             </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="card"  >
+                        <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title" >Hangman</h2>
@@ -138,7 +138,7 @@
                     </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="card"  >
+                        <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title" >Pokédex</h2>
@@ -151,7 +151,7 @@
                 
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="card"  >
+                        <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title" >Notes App</h2>
@@ -161,7 +161,7 @@
                     </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="card"  >
+                        <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title" >Todo App</h2>
@@ -171,7 +171,7 @@
                     </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="card"  >
+                        <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title" >Empty Project</h2>
@@ -189,8 +189,8 @@
                 <h2>Get In Touch</h2>
             </div>
             <div>
-                <a class="footer-link" href="https://linkedin.com/" target="_blank"><i class="social-icon fab fa-linkedin"></i></a>
-                <a class="footer-link" href="https://github.com" target="_blank"><i class="social-icon fab fa-github"></i></i></a>
+                <a class="footer-link" href="https://linkedin.com/danielvisage" target="_blank"><i class="social-icon fab fa-linkedin"></i></a>
+                <a class="footer-link" href="https://github.com/KiwiKoi" target="_blank"><i class="social-icon fab fa-github"></i></i></a>
                 <a class="footer-link" href=# target="_blank"><i class="social-icon fas fa-envelope"></i></a>
             </div>
         </section>
