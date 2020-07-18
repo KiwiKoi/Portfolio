@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/55e3b5a173.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body lang="en">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
         <a class="navbar-brand" href="#"><i class="fas fa-code logo"></i>Daniel Visage</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,21 +25,18 @@
             <a id="contactNav" class="nav-item nav-link" href="#contact">Contact</a>
           </div>
           <div class="lang-select dropdown">
-            <button class="btn btn-secondary dropdown-toggle btn-sm" style="background-color: black;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Site Language
-              <span class="caret"></span>
-            </button>
-                <ul class="dropdown-menu nav-item" style="background-color: black;" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item refresh-button" style=" color:#BFBFBF" href="#eng" language="english" class="active" >English</a></li>
-                    <li><a class="dropdown-item refresh-button" style=" color:#BFBFBF" href="#fr" language="french">Français</a></li>
-                </ul>
+                <select onChange="langChange(this)">
+                    <option  active value="en">English</option>
+                    <option  value="fr">Français</option> </select>
           </div>
         </div>
       </nav>
 
     <header>
-        <h1 id="heading">Hi, I'm Daniel</h1>
-        <h3 id="subtitle">Front-end developer</h3>
+        <h1 id="heading" lang="en">Hi, I'm Daniel</h1>
+        <h1 lang="fr">Bonjour</h1>
+        <h3 id="subtitle" lang="en">Web developer</h3>
+        <h3 lang="fr">Développeur Web</h3>
         <a class="button" href="#portfolio">See My Projects</a>
     </header>
 
@@ -47,7 +44,8 @@
         <hr>
         <section id="skills" class="skills">
             <div class="section-title">
-                <h2>Skillset</h2>
+                <h2 lang="en">Skillset</h2>
+                <h2 lang="fr">Compétences</h2>
             </div>
                     <div class="container-fluid">
                         <div class="row justify-content-center">
@@ -113,7 +111,8 @@
     <hr>
         <section id="portfolio" class="portfolio">
             <div class="section-title">
-                <h2>Portfolio</h2>
+                <h2 lang="en">Portfolio</h2>
+                <h2 lang="fr">Portfolio</h2>
             </div>
             <div class="container-fluid">
                 <div class="row justify-content-center">
@@ -121,9 +120,12 @@
                         <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
-                                <h2 class="card-title" >Portfolio Site</h2>
-                              <p class="card-text">My portfolio site made in html/css/javscript/bootstrap.</p>
-                              <a href="https://kiwikoi.github.io/Portfolio/" target="_blank" class="btn btn-primary">Live link</a>
+                                <h2 class="card-title" lang="en">Portfolio Site</h2>
+                                <h2 class="card-title" lang="fr">Site personnel</h2>
+                              <p lang="en" class="card-text">My portfolio site made in HTML/CSS/Javascript and Bootstrap.</p>
+                              <p lang="fr" class="card-text">Mon site personnel créé avec HTML/CSS/Javascript et Bootstrap.</p>
+                              <a lang="en" href="https://kiwikoi.github.io/Portfolio/" target="_blank" class="btn btn-primary">Live link</a>
+                              <a lang="fr" href="https://kiwikoi.github.io/Portfolio/" target="_blank" class="btn btn-primary">Lien</a>
                             </div>
                             </div>
                     </div>
@@ -131,9 +133,12 @@
                         <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
-                                <h2 class="card-title" >Hangman</h2>
-                            <p class="card-text">A simple hangman app made in javascript.</p>
-                            <a href="https://hangman-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Live link</a>
+                                <h2 lang="en" class="card-title" >Hangman</h2>
+                                <h2 lang="fr" class="card-title" >Pendu</h2>
+                            <p lang="en" class="card-text">A simple hangman app made in javascript.</p>
+                            <p lang="fr" class="card-text">Un jeu pendu simple fait avec Javascript.</p>
+                            <a lang="en" href="https://hangman-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Live link</a>
+                            <a lang="fr" href="https://hangman-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Lien</a>
                             </div>
                     </div>
                     </div>
@@ -141,9 +146,12 @@
                         <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
-                                <h2 class="card-title" >Pokédex</h2>
-                            <p class="card-text">A simple pokedex made in React with the PokeAPI.</p>
-                            <a href="https://kiwikoi.github.io/Pokedex/" target="_blank" class="btn btn-primary">Live link</a>
+                                <h2 lang="en" class="card-title" >Pokédex</h2>
+                                <h2 lang="fr" class="card-title" >Pokédex</h2>
+                            <p lang="en" class="card-text">A simple pokedex made in Reactjs with the PokeAPI.</p>
+                            <p lang="fr" class="card-text">Une Pokédex simple fait avec Reactjs et le PokéAPI</p>
+                            <a lang="en" href="https://kiwikoi.github.io/Pokedex/" target="_blank" class="btn btn-primary">Live link</a>
+                            <a lang="fr" href="https://kiwikoi.github.io/Pokedex/" target="_blank" class="btn btn-primary">Lien</a>
                             </div>
                     </div>
                     </div>
@@ -154,9 +162,12 @@
                         <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
-                                <h2 class="card-title" >Notes App</h2>
-                            <p class="card-text">A simple notes app.</p>
-                            <a href="https://notes-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Live link</a>
+                                <h2 lang="en" class="card-title" >Notes App</h2>
+                                <h2 lang="fr" class="card-title" >Appli prise de notes</h2>
+                            <p lang="en" class="card-text">A simple notes app.</p>
+                            <p lang="fr" class="card-text">Une appli de prise de notes basique.</p>
+                            <a lang="en" href="https://notes-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Live link</a>
+                            <a lang="fr" href="https://notes-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Lien</a>
                         </div>
                     </div>
                     </div>
@@ -164,9 +175,12 @@
                         <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
-                                <h2 class="card-title" >Todo App</h2>
-                              <p class="card-text">A simple todo app.</p>
-                              <a href="https://todo-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Live link</a>
+                                <h2 lang="en" class="card-title" >Todo App</h2>
+                                <h2 lang="fr" class="card-title" >Appli de tâches</h2>
+                              <p lang="en" class="card-text">A simple todo app.</p>
+                              <p lang="fr" class="card-text">Une appli de tâches basique.</p>
+                              <a lang="en" href="https://todo-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Live link</a>
+                              <a lang="fr" href="https://todo-practice-app.netlify.app/" target="_blank" class="btn btn-primary">Lien</a>
                             </div>
                     </div>
                     </div>
@@ -174,9 +188,12 @@
                         <div class="project card"  >
                             <img class="card-img-top card-body" src="images/under-construction.png" alt="Card image cap">
                             <div class="card-body">
-                                <h2 class="card-title" >Empty Project</h2>
-                              <p class="card-text">####</p>
-                              <a href="#" target="_blank" class="btn btn-primary">####</a>
+                                <h2 lang="en" class="card-title" >Empty Project</h2>
+                                <h2 lang="fr" class="card-title" >Projet vide</h2>
+                              <p lang="en" class="card-text">####</p>
+                              <p lang="fr" class="card-text">####</p>
+                              <a lang="en" href="#" target="_blank" class="btn btn-primary">####</a>
+                              <a lang="fr" href="#" target="_blank" class="btn btn-primary">####</a>
                             </div>
                     </div>
                     </div>
@@ -202,6 +219,7 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="langSelect.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

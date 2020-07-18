@@ -10,12 +10,22 @@ body {
   min-height: 100%;
 }
 
+body[lang="en"] [lang="fr"],
+body[lang="fr"] [lang="en"] {
+  display: none;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
 p {
+  color: #e7e7e7;
+}
+
+select {
+  background-color: black;
   color: #e7e7e7;
 }
 
