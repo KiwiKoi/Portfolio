@@ -85,7 +85,7 @@ footer {
 
 footer,
 .main {
-  background-color: #2b304b;
+  background-color: #ebedf7;
 }
 
 h3.subtitle {
@@ -110,7 +110,7 @@ div.section-title {
   box-sizing: border-box;
   align-content: center;
   border-width: 1px;
-  border-radius: 5px;
+  border-radius: 1px;
   margin: 2px;
   min-height: 0vh;
   min-width: 30vw;
