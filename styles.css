@@ -85,7 +85,7 @@ footer {
 
 footer,
 .main {
-  background-color: #ebedf7;
+  background-color: #404455;
 }
 
 h3.subtitle {
@@ -116,9 +116,12 @@ div.section-title {
   min-width: 30vw;
 }
 
-.skill.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.skill.card {
+  border: none;
 }
+/* .skill.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 
 .project.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -130,7 +133,7 @@ div.section-title {
 
 img {
   align-self: center;
-  max-width: 50%;
+  max-width: 80%;
   max-height: 50%;
   display: block;
 }
